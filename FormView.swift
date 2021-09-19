@@ -27,6 +27,7 @@ struct FormView: View {
                 selection:$selection){
                     EmptyView()
                 }.isDetailLink(false)
+                 .navigationBarBackButtonHidden(true)
             
             TextField("Name",text:$name)
                 .textFieldStyle(.roundedBorder)
@@ -43,6 +44,7 @@ struct FormView: View {
         }.padding(10)
             .navigationTitle("Save")
             .navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode.inline)
+            .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
@@ -59,8 +61,6 @@ struct FormView: View {
                     })
                 }
             }
-        
-            .navigationBarBackButtonHidden(true)
     }
     func save() {
         let  url = URL(string:"http://localhost/php_tutorial/api.php")!

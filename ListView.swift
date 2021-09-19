@@ -28,7 +28,7 @@ struct ListView: View {
 
     var body: some View {
         
-        NavigationView {
+   
             HStack  {
                 NavigationLink(
                     destination: FormView(),
@@ -157,7 +157,7 @@ struct ListView: View {
                     }
                 }
             }
-        }
+  
     }
     func read() {
         // we short the code to many .. confuse

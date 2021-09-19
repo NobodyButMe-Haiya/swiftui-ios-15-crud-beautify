@@ -11,8 +11,9 @@ import SwiftUI
 struct crudApp: App {
     var body: some Scene {
         WindowGroup {
-       
+            NavigationView {
                 ListView()
-                    }
+            }.navigationViewStyle(StackNavigationViewStyle())
+        }
     }
 }
